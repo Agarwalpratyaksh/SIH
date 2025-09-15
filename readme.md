@@ -1,0 +1,1 @@
+Please use pinata jwt in frontend env
