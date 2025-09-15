@@ -109,7 +109,7 @@ export function RegisterForm() {
         .signers([touristRecord])
         .rpc();
 
-      setStatus({ message: `Success! Transaction: ${tx.substring(0, 20)}...`, type: 'success' });
+      setStatus({ message: `Success! Transaction: ${tx}`, type: 'success' });
       setFormData(initialState);
       
     } catch (error) {
