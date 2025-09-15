@@ -1,0 +1,113 @@
+{
+  "address": "HMGBqpGvQyNicSDmHk8WCDQnm1LAXgFsLMEtEhxQAauU",
+  "metadata": {
+    "name": "tourist_identity",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "register_tourist",
+      "discriminator": [
+        143,
+        229,
+        235,
+        123,
+        244,
+        133,
+        7,
+        243
+      ],
+      "accounts": [
+        {
+          "name": "tourist_record",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "data_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "ipfs_cid",
+          "type": "string"
+        },
+        {
+          "name": "issued_at",
+          "type": "i64"
+        },
+        {
+          "name": "validity",
+          "type": "i64"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "TouristRecord",
+      "discriminator": [
+        156,
+        226,
+        200,
+        187,
+        81,
+        246,
+        221,
+        3
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "TouristRecord",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "data_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "ipfs_cid",
+            "type": "string"
+          },
+          {
+            "name": "issued_at",
+            "type": "i64"
+          },
+          {
+            "name": "validity",
+            "type": "i64"
+          }
+        ]
+      }
+    }
+  ]
+}
