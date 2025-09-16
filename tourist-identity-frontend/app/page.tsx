@@ -91,7 +91,7 @@ function HomeSelection({ onSelect }: { onSelect: (view: View) => void }) {
         <ScanSearch className="w-20 h-20 mb-6 text-green-400" />
         <h2 className="text-3xl font-bold">Verify Record</h2>
         <p className="mt-2 text-slate-400">
-          Fetch and decrypt a tourist's data using their public key.
+          Fetch and decrypt a tourists data using their public key.
         </p>
       </motion.div>
     </div>

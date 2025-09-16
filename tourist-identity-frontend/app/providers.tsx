@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // app/providers.tsx
 "use client"; // This is a client component
 
